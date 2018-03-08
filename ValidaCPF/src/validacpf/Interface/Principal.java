@@ -105,6 +105,7 @@ public class Principal extends javax.swing.JFrame {
             if (resultado == true) {
                 lblResultado.setForeground(Color.GREEN);
                 lblResultado.setText("CPF válido!");
+                txtCPF.setText(validacao.mascaraCPF(txtCPF.getText()));
             } else {
                 lblResultado.setForeground(Color.RED);
                 lblResultado.setText("CPF inválido!");

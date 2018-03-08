@@ -66,4 +66,14 @@ public class validacao {
         //comparar o digito verificador do cpf com o primeiro resto + o segundo resto.   
         return nDigVerific.equals(nDigResult);
     }
+    public static String mascaraCPF(String cpf){
+        //System.out.println(cpf);
+        String mascara = "";
+        mascara = cpf.substring(0, 3) + ".";
+        mascara += cpf.substring(3, 6) + ".";
+        mascara += cpf.substring(6, 9) + "-";
+        mascara += cpf.substring(9, 11);
+        //System.out.println(mascara);
+        return mascara;        
+    }
 }
